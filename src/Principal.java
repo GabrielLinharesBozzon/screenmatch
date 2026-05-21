@@ -1,3 +1,5 @@
+import br.com.alura.screenmatch.modelos.Filme;
+
 public class  Principal {
     static void main(String[] args) {
         System.out.println("Filmes");
@@ -6,6 +8,7 @@ public class  Principal {
         meuFilme.nome = "O poderoso chefão 👍";
         meuFilme.anoDeLancamento = 1970;
         meuFilme.duracaoEmMinutos= 180;
+        meuFilme.nome.
 
     meuFilme.exibeFichaTecnica();
     meuFilme.avalia(8);

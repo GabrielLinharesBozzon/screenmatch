@@ -8,7 +8,7 @@ public class  Principal {
         meuFilme.nome = "O poderoso chefão 👍";
         meuFilme.anoDeLancamento = 1970;
         meuFilme.duracaoEmMinutos= 180;
-        meuFilme.nome.
+        //meuFilme.nome.
 
     meuFilme.exibeFichaTecnica();
     meuFilme.avalia(8);

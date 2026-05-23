@@ -1,19 +1,20 @@
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Titulo;
 
 public class  Principal {
     static void main(String[] args) {
         System.out.println("Filmes");
 
-    Filme meuFilme = new Filme();
-    meuFilme.setNome("O poderoso chefão 👍")  ;
-    meuFilme.setAnoDeLancamento(1970);
-    meuFilme.setDuracaoEmMinutos(180);
-    meuFilme.exibeFichaTecnica();
-    meuFilme.avalia(8);
-    meuFilme.avalia(9);
-    meuFilme.avalia(10);
-        IO.println( "Média de avaliações do filme:" + meuFilme.pegaMedia());
-        IO.println("Total de avaliacoes:"+ meuFilme.getTotaldeAvaliacoes());
+    Titulo titulo = new Titulo();
+    titulo.setNome("O poderoso chefão 👍")  ;
+    titulo.setAnoDeLancamento(1970);
+    titulo.setDuracaoEmMinutos(180);
+    titulo.exibeFichaTecnica();
+    titulo.avalia(8);
+    titulo.avalia(9);
+    titulo.avalia(10);
+        IO.println( "Média de avaliações do filme:" + titulo.pegaMedia());
+        IO.println("Total de avaliacoes:"+ titulo.getTotaldeAvaliacoes());
 
 
 

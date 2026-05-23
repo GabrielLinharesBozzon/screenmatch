@@ -1,18 +1,26 @@
 package br.com.alura.screenmatch.modelos;
 
 public class Filme {
-    public String nome;
-    public int anoDeLancamento;
-   public boolean incluindoNoPlano;
-    private double somaDasAvaliacoes;
-    private int totaldeAvaliacoes;
-   public  int duracaoEmMinutos;
-    //modificadores metodos
+   private String nome;
+   private int anoDeLancamento;
+   private boolean incluindoNoPlano;
+   private double somaDasAvaliacoes;
+   private int totaldeAvaliacoes;
+   private  int duracaoEmMinutos;
+
   public  int  getTotaldeAvaliacoes(){
-        return totaldeAvaliacoes;
+
+      return totaldeAvaliacoes;
     }
-
-
+  public void setNome(String nome) {
+        this.nome = nome;
+    }
+  public void setAnoDeLancamento(int anoDeLancamento) {
+        this.anoDeLancamento = anoDeLancamento;
+    }
+  public void setDuracaoEmMinutos(int duracaoEmMinutos) {
+        this.duracaoEmMinutos = duracaoEmMinutos;
+    }
   public void exibeFichaTecnica(){
         IO.println("Nome do filme "+nome);
         IO.println( "Ano de lançamento:" +anoDeLancamento);
@@ -21,11 +29,11 @@ public class Filme {
 
 
     }
-    public  void avalia (double nota ){
+  public  void avalia (double nota ){
         somaDasAvaliacoes += nota;
         totaldeAvaliacoes++;
     }
-   public double pegaMedia(){
+  public double pegaMedia(){
         return somaDasAvaliacoes / totaldeAvaliacoes;
     }
 }

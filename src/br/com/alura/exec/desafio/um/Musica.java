@@ -1,3 +1,5 @@
+package br.com.alura.exec.desafio.um;
+
 public class Musica {
     String titulo;
     String artista;

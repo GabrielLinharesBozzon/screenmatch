@@ -4,12 +4,10 @@ public class  Principal {
     static void main(String[] args) {
         System.out.println("Filmes");
 
-        Filme meuFilme = new Filme();
-        meuFilme.nome = "O poderoso chefão 👍";
-        meuFilme.anoDeLancamento = 1970;
-        meuFilme.duracaoEmMinutos= 180;
-        //meuFilme.nome.
-
+    Filme meuFilme = new Filme();
+    meuFilme.setNome("O poderoso chefão 👍")  ;
+    meuFilme.setAnoDeLancamento(1970);
+    meuFilme.setDuracaoEmMinutos(180);
     meuFilme.exibeFichaTecnica();
     meuFilme.avalia(8);
     meuFilme.avalia(9);

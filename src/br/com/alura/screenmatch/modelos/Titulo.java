@@ -12,15 +12,19 @@ public class Titulo {
 
         return totaldeAvaliacoes;
     }
+
     public void setNome(String nome) {
         this.nome = nome;
     }
+
     public void setAnoDeLancamento(int anoDeLancamento) {
         this.anoDeLancamento = anoDeLancamento;
     }
+
     public void setDuracaoEmMinutos(int duracaoEmMinutos) {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
+
     public void exibeFichaTecnica(){
         IO.println("Nome do filme "+nome);
         IO.println( "Ano de lançamento:" +anoDeLancamento);
@@ -29,10 +33,12 @@ public class Titulo {
 
 
     }
+
     public  void avalia (double nota ){
         somaDasAvaliacoes += nota;
         totaldeAvaliacoes++;
     }
+
     public double pegaMedia(){
         return somaDasAvaliacoes / totaldeAvaliacoes;
     }

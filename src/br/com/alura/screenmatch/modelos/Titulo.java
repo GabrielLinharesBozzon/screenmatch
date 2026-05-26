@@ -43,4 +43,7 @@ public class Titulo {
         return somaDasAvaliacoes / totaldeAvaliacoes;
     }
 
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
 }

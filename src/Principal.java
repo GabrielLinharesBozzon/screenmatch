@@ -1,3 +1,4 @@
+import br.com.alura.calculos.CalculadorasDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Titulo;
 
@@ -17,7 +18,7 @@ public class  Principal {
         IO.println("Total de avaliacoes:"+ titulo.getTotaldeAvaliacoes());
 
 
-
+        CalculadorasDeTempo calculadora=  new CalculadorasDeTempo();
     }
 }
 

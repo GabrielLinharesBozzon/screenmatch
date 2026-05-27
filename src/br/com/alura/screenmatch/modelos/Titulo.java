@@ -25,6 +25,10 @@ public class Titulo {
         this.duracaoEmMinutos = duracaoEmMinutos;
     }
 
+    public int getDuracaoEmMinutos() {
+        return duracaoEmMinutos;
+    }
+
     public void exibeFichaTecnica(){
         IO.println("Nome do filme "+nome);
         IO.println( "Ano de lançamento:" +anoDeLancamento);
@@ -41,6 +45,8 @@ public class Titulo {
 
     public double pegaMedia(){
         return somaDasAvaliacoes / totaldeAvaliacoes;
+
     }
+
 
 }

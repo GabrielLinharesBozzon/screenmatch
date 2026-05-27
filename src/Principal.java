@@ -1,3 +1,4 @@
+import br.com.alura.calculos.CalculadorasDeTempo;
 import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
@@ -25,7 +26,7 @@ public class  Principal {
     serie.setEpisodiosPorTemporadas(10);
     serie.getDuracaoEmMinutos();
 
-
+        CalculadorasDeTempo calculadora=  new CalculadorasDeTempo();
     }
 }
 

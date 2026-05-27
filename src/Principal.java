@@ -1,12 +1,13 @@
 import br.com.alura.screenmatch.modelos.Filme;
+import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
 public class  Principal {
     static void main(String[] args) {
         System.out.println("Filmes");
 
-    Titulo titulo = new Titulo();
-    titulo.setNome("O poderoso chefão 👍")  ;
+    Filme titulo = new Filme();
+    titulo.setNome("O poderoso chefão ←👽→")  ;
     titulo.setAnoDeLancamento(1970);
     titulo.setDuracaoEmMinutos(180);
     titulo.exibeFichaTecnica();
@@ -16,6 +17,13 @@ public class  Principal {
         IO.println( "Média de avaliações do filme:" + titulo.pegaMedia());
         IO.println("Total de avaliacoes:"+ titulo.getTotaldeAvaliacoes());
 
+    Serie serie = new Serie();
+    serie.setNome("Lost");
+    serie.setAnoDeLancamento(2002);
+    serie.exibeFichaTecnica();
+    serie.setTemporadas(10);
+    serie.setEpisodiosPorTemporadas(10);
+    serie.getDuracaoEmMinutos();
 
 
     }

@@ -6,6 +6,8 @@ public class Serie extends Titulo {
     private boolean ativa;
     private int minutosPorEpisodio;
 
+    //metodos get e setter
+
     public int getTemporadas() {
         return temporadas;
     }
@@ -36,5 +38,9 @@ public class Serie extends Titulo {
 
     public void setMinutosPorEpisodio(int minutosPorEpisodio) {
         this.minutosPorEpisodio = minutosPorEpisodio;
+    }
+    @Override
+    public int getDuracaoEmMinutos() {
+        return super.getDuracaoEmMinutos();
     }
 }

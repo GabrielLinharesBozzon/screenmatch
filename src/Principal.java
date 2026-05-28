@@ -26,7 +26,16 @@ public class  Principal {
     serie.setEpisodiosPorTemporadas(10);
     serie.getDuracaoEmMinutos();
 
+    Filme outroFilme = new Filme();
+    outroFilme.setNome("Outro");
+    outroFilme.setAnoDeLancamento(2003);
+    outroFilme.setDuracaoEmMinutos(200);
+
+
         CalculadorasDeTempo calculadora=  new CalculadorasDeTempo();
+        calculadora.inclui(titulo);
+        calculadora.inclui(outroFilme);
+        IO.println(calculadora.getTempoTotal());
     }
 }
 

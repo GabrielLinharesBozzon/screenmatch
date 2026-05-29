@@ -8,7 +8,11 @@ public class  Principal {
         System.out.println("Filmes");
 
     Filme titulo = new Filme();
+<<<<<<< Updated upstream
     titulo.setNome("O poderoso chefão ←👽→")  ;
+=======
+    titulo.setNome("O poderoso chefão 👍")  ;
+>>>>>>> Stashed changes
     titulo.setAnoDeLancamento(1970);
     titulo.setDuracaoEmMinutos(180);
     titulo.exibeFichaTecnica();

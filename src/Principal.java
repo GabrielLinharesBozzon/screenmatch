@@ -9,6 +9,7 @@ public class  Principal {
 
     Filme titulo = new Filme();
     titulo.setNome("O poderoso chefão ←👽→")  ;
+
     titulo.setAnoDeLancamento(1970);
     titulo.setDuracaoEmMinutos(180);
     titulo.exibeFichaTecnica();

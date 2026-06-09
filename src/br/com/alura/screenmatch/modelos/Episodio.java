@@ -1,9 +1,15 @@
 package br.com.alura.screenmatch.modelos;
 
-public class Episodio {
+import br.com.alura.calculos.Classificavel;
+
+public class Episodio implements Classificavel {
+
+
+
     private int numero;
     private String nome;
     private Serie serie;
+    private int totalVisiualizacoes;
 
     public int getNumero() {
         return numero;
@@ -27,5 +33,22 @@ public class Episodio {
 
     public void setSerie(Serie serie) {
         this.serie = serie;
+    }
+
+    public int getTotalVisiualizacoes() {
+        return totalVisiualizacoes;
+    }
+
+    public void setTotalVisiualizacoes(int totalVisiualizacoes) {
+        this.totalVisiualizacoes = totalVisiualizacoes;
+    }
+
+    @Override
+    public int getClassificacao() {
+       if (totalVisiualizacoes > 100) {
+           return 4;
+       }else {
+       return 2;
+       }
     }
 }

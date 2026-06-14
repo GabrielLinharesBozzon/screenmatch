@@ -48,7 +48,7 @@ public class Episodio implements Classificavel {
        if (totalVisiualizacoes > 100) {
            return 4;
        }else {
-       return 2;
+           return 2;
        }
     }
 }

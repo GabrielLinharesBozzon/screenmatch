@@ -3,8 +3,8 @@ import br.com.alura.screenmatch.modelos.Filme;
 import br.com.alura.screenmatch.modelos.Serie;
 import br.com.alura.screenmatch.modelos.Titulo;
 
-public class  Principal {
-    static void main(String[] args) {
+public class Principal {
+    public static void main(String[] args) {
         System.out.println("Filmes");
 
     Filme titulo = new Filme();
@@ -16,8 +16,8 @@ public class  Principal {
     titulo.avalia(8);
     titulo.avalia(9);
     titulo.avalia(10);
-        IO.println( "Média de avaliações do filme:" + titulo.pegaMedia());
-        IO.println("Total de avaliacoes:"+ titulo.getTotaldeAvaliacoes());
+        System.out.println( "Média de avaliações do filme:" + titulo.pegaMedia());
+        System.out.println("Total de avaliacoes:"+ titulo.getTotaldeAvaliacoes());
 
     Serie serie = new Serie();
     serie.setNome("Lost");
@@ -36,7 +36,7 @@ public class  Principal {
         CalculadorasDeTempo calculadora=  new CalculadorasDeTempo();
         calculadora.inclui(titulo);
         calculadora.inclui(outroFilme);
-        IO.println(calculadora.getTempoTotal());
+        System.out.println(calculadora.getTempoTotal());
     }
 }
 

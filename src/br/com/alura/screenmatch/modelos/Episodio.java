@@ -52,5 +52,8 @@ public class Episodio implements Classificavel {
        }
     }
 
-        
+
+    public void setTotalVisualizacoes(int totalVisualizacoes) {
+        this.totalVisiualizacoes = totalVisualizacoes;
+    }
 }

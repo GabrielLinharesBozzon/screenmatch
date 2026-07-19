@@ -55,6 +55,8 @@ public class Principal {
         filtro.filtra(episodio);
 
         var filmeDoPaulo = new Filme();
+
+
         filmeDoPaulo.setDuracaoEmMinutos(200);
         filmeDoPaulo.setNome("Dogville");
         filmeDoPaulo.setAnoDeLancamento(2003);

@@ -5,6 +5,9 @@ import br.com.alura.calculos.Classificavel;
 public class Filme extends Titulo implements Classificavel {
     private String diretor;
 
+    public Filme(String nome, int anoLancamento) {
+        super(nome, anoLancamento);
+    }
 
 
     public String getDiretor() {

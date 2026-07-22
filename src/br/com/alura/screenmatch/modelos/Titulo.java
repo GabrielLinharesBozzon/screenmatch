@@ -48,6 +48,11 @@ public class Titulo {
         System.out.println("Ano de lançamento: " + anoDeLancamento);
     }
 
+    public Titulo(String nome, int anoDeLancamento) {
+        this.nome = nome;
+        this.anoDeLancamento = anoDeLancamento;
+    }
+
     public void avalia(double nota){
         somaDasAvaliacoes += nota;
         totalDeAvaliacoes++;

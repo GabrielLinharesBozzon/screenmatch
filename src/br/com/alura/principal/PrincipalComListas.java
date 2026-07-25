@@ -5,9 +5,7 @@ import br.com.alura.modelos.Filme;
 import br.com.alura.modelos.Serie;
 import br.com.alura.modelos.Titulo;
 
-import java.util.ArrayList;
-import java.util.Collection;
-import java.util.Collections;
+import java.util.*;
 
 public class PrincipalComListas {
     static void main(String[] args) {
@@ -18,7 +16,7 @@ public class PrincipalComListas {
         var filmeDoPaulo = new Filme("Dogville 👩",2003);
 
 
-        ArrayList<Titulo> lista = new ArrayList<>();
+        List<Titulo> lista = new ArrayList<>();
         lista.add(filmeDoPaulo);
         lista.add(meuFilme);
         lista.add(outroFilme);
@@ -32,5 +30,8 @@ public class PrincipalComListas {
 
         Collections.sort(lista);
         System.out.println(lista);
+
+        lista.sort(Comparator.comparing(Titulo::getAnoDeLancamento));
+        System.out.println("Ordenando por ano: \n"+lista);
     }
 }

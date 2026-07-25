@@ -1,4 +1,4 @@
-package br.com.alura.screenmatch.modelos;
+package br.com.alura.modelos;
 
 public class Serie extends Titulo {
     private int temporadas;
@@ -46,5 +46,10 @@ public class Serie extends Titulo {
     @Override
     public int getDuracaoEmMinutos() {
         return super.getDuracaoEmMinutos();
+    }
+
+    @Override
+    public String toString() {
+        return "Serie: " +this.getNome() + " (" +this.getAnoDeLancamento() + ")";
     }
 }

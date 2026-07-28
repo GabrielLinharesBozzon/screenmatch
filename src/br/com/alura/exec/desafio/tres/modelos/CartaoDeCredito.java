@@ -8,7 +8,13 @@ public class CartaoDeCredito {
     private double saldo;
     private List<Compra> Compras;
 
+    public double getSaldo() {
+        return saldo;
+    }
 
+    public List<Compra> getCompras() {
+        return Compras;
+    }
 
     public CartaoDeCredito(double limite){
     this.limite = limite;

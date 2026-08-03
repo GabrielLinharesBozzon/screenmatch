@@ -5,8 +5,8 @@ import java.util.Scanner;
 public class Calculadora {
     static void main(String[] args) {
         Scanner leitor = new Scanner(System.in);
-        IO.println("Digite o valor :");
+        System.out.println("Digite o valor :");
         int valor = leitor.nextInt();
-        IO.println("O valor é "+valor*2);
+        System.out.println("O valor é "+valor*2);
     }
 }

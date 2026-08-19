@@ -13,6 +13,11 @@ public class Titulo implements Comparable<Titulo> {
     private int totalDeAvaliacoes;
     private int duracaoEmMinutos;
 
+    public Titulo(TituloOmdb meuTituloOmdb) {
+
+
+    }
+
     public String getNome() {
         return nome;
     }

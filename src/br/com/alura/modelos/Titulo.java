@@ -18,6 +18,9 @@ public class Titulo implements Comparable<Titulo> {
 
     }
 
+    public Titulo(String title) {
+    }
+
     public String getNome() {
         return nome;
     }

@@ -31,12 +31,13 @@ public class PrincipalComBusca {
         System.out.println( json);
 
         Gson gson = new GsonBuilder()
-                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)
+                .setFieldNamingPolicy(FieldNamingPolicy.UPPER_CAMEL_CASE)//Passa o parametro em upper case
                 .create();
 
         TituloOmdb meuTituloOmdb = gson.fromJson(json, TituloOmdb.class);
         System.out.println(meuTituloOmdb);
 
-        Titulo meuTitulo = new Titulo(meuTituloOmdb.title())
+        Titulo meuTitulo = new Titulo(meuTituloOmdb.title());
+
     }
 }
